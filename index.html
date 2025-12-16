@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Irmonhair GmbH - Ihr exklusiver Friseur in München Pasing. Haarschnitte, Colorationen, Styling für Damen, Herren und Kinder.">
+    <title>Irmonhair | Friseur in München Pasing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="Irmonhair Beauty">
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" data-de="Startseite" data-en="Home">Startseite</a></li>
+                <li><a href="#services" data-de="Preise" data-en="Prices">Preise</a></li>
+                <li><a href="#gallery" data-de="Galerie" data-en="Gallery">Galerie</a></li>
+                <li><a href="#contact" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="lang-toggle" id="lang-toggle">
+                    <span class="lang-active">DE</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-inactive">EN</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slideshow">
+            <div class="slide active" style="background-image: url('images/1.jpg')"></div>
+            <div class="slide" style="background-image: url('images/2.jpg')"></div>
+            <div class="slide" style="background-image: url('images/4.jpg')"></div>
+            <div class="slide" style="background-image: url('images/5.jpg')"></div>
+            <div class="slide" style="background-image: url('images/19.jpg')"></div>
+            <div class="slide" style="background-image: url('images/20.jpg')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-up" data-de="Willkommen bei Irmonhair" data-en="Welcome to Irmonhair">
+                Willkommen bei Irmonhair</h1>
+            <p class="hero-subtitle animate-fade-up delay-1" data-de="Ihr exklusiver Friseur in München"
+                data-en="Your exclusive hairdresser in Munich">Ihr exklusiver Friseur in München</p>
+            <div class="hero-buttons animate-fade-up delay-2">
+                <a href="https://www.treatwell.de/ort/irmonhair-gmbh/" target="_blank" class="btn-primary"
+                    data-de="Online buchen - Pasing" data-en="Book Online - Pasing">
+                    <i class="fas fa-calendar-check"></i> Online buchen - Pasing
+                </a>
+                <a href="https://www.treatwell.de/ort/irmonhair-beauty-gmbh/" target="_blank" class="btn-secondary"
+                    data-de="Online buchen - Großhadern" data-en="Book Online - Großhadern">
+                    <i class="fas fa-calendar-check"></i> Online buchen - Großhadern
+                </a>
+            </div>
+        </div>
+        <div class="slide-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+            <button class="indicator" data-slide="3"></button>
+            <button class="indicator" data-slide="4"></button>
+            <button class="indicator" data-slide="5"></button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title" data-de="Unsere Leistungen & Preise" data-en="Our Services & Prices">Unsere
+                    Leistungen & Preise</h2>
+                <p class="section-subtitle" data-de="Professionelle Haarpflege für Damen, Herren und Kinder"
+                    data-en="Professional hair care for ladies, gentlemen and children">Professionelle Haarpflege für
+                    Damen, Herren und Kinder</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Damen Haarschnitte -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3 class="service-title" data-de="Damen - Haarschnitte & Stylings"
+                        data-en="Ladies - Haircuts & Styling">Damen - Haarschnitte & Stylings</h3>
+                    <ul class="price-list">
+                        <li>
+                            <span class="service-name" data-de="Waschen / Föhnen" data-en="Wash / Blow-dry">Waschen /
+                                Föhnen</span>
+                            <span class="service-price">ab 30 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Waschen, Schneiden & Föhnen"
+                                data-en="Wash, Cut & Blow-dry">Waschen, Schneiden & Föhnen</span>
+                            <span class="service-price">ab 60 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Mit heißer Schere" data-en="With Hot Scissors">Mit
+                                heißer Schere</span>
+                            <span class="service-price">ab 75 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Aufschnitt heiße Schere"
+                                data-en="Hot Scissors Trim">Aufschnitt heiße Schere</span>
+                            <span class="service-price">15 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Dauerwelle" data-en="Perm">Dauerwelle</span>
+                            <span class="service-price">ab 80 €</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Damen Farbe -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="service-title" data-de="Damen - Farbe & Coloration" data-en="Ladies - Color & Coloring">
+                        Damen - Farbe & Coloration</h3>
+                    <ul class="price-list">
+                        <li>
+                            <span class="service-name" data-de="Illumina Color & Föhnen inkl. Kur"
+                                data-en="Illumina Color & Blow-dry incl. Treatment">Illumina Color & Föhnen inkl.
+                                Kur</span>
+                            <span class="service-price">ab 110 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Illumina Color, Schneiden & Föhnen"
+                                data-en="Illumina Color, Cut & Blow-dry">Illumina Color, Schneiden & Föhnen</span>
+                            <span class="service-price">ab 115 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Elumen Color & Föhnen inkl. Kur"
+                                data-en="Elumen Color & Blow-dry incl. Treatment">Elumen Color & Föhnen inkl. Kur</span>
+                            <span class="service-price">ab 120 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Elumen Color, Schneiden & Föhnen"
+                                data-en="Elumen Color, Cut & Blow-dry">Elumen Color, Schneiden & Föhnen</span>
+                            <span class="service-price">ab 130 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Strähnen ganzer Kopf & Föhnen"
+                                data-en="Full Highlights & Blow-dry">Strähnen ganzer Kopf & Föhnen</span>
+                            <span class="service-price">ab 130 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Strähnen ganzer Kopf, Schnitt & Föhnen"
+                                data-en="Full Highlights, Cut & Blow-dry">Strähnen ganzer Kopf, Schnitt & Föhnen</span>
+                            <span class="service-price">ab 155 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Glossing & Föhnen & Pflege"
+                                data-en="Glossing & Blow-dry & Care">Glossing & Föhnen & Pflege</span>
+                            <span class="service-price">ab 70 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Glossing, Schnitt & Föhnen & Pflege"
+                                data-en="Glossing, Cut & Blow-dry & Care">Glossing, Schnitt & Föhnen & Pflege</span>
+                            <span class="service-price">ab 105 €</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Herren -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="service-title" data-de="Herren - Haarschnitte & Stylings"
+                        data-en="Men - Haircuts & Styling">Herren - Haarschnitte & Stylings</h3>
+                    <ul class="price-list">
+                        <li>
+                            <span class="service-name" data-de="Schnitt & Styling" data-en="Cut & Styling">Schnitt &
+                                Styling</span>
+                            <span class="service-price">44 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Neuschnitt & Styling"
+                                data-en="New Cut & Styling">Neuschnitt & Styling</span>
+                            <span class="service-price">50 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Schnitt, Tonic Massage & Styling"
+                                data-en="Cut, Tonic Massage & Styling">Schnitt, Tonic Massage & Styling</span>
+                            <span class="service-price">60 €</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Kinder -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 class="service-title" data-de="Kinder - Haarschnitte" data-en="Children - Haircuts">Kinder -
+                        Haarschnitte</h3>
+                    <ul class="price-list">
+                        <li>
+                            <span class="service-name" data-de="Kinderhaarschnitt"
+                                data-en="Children's Haircut">Kinderhaarschnitt</span>
+                            <span class="service-price">ab 25 €</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Haarkuren & Pflege -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="service-title" data-de="Haarkuren & Pflege" data-en="Hair Treatments & Care">Haarkuren &
+                        Pflege</h3>
+                    <ul class="price-list">
+                        <li>
+                            <span class="service-name" data-de="Conditioner" data-en="Conditioner">Conditioner</span>
+                            <span class="service-price">5 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Haarkur" data-en="Hair Treatment">Haarkur</span>
+                            <span class="service-price">ab 10 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Criokur (Kältebehandlung) & Föhnen"
+                                data-en="Cryo Treatment (Cold Treatment) & Blow-dry">Criokur (Kältebehandlung) &
+                                Föhnen</span>
+                            <span class="service-price">ab 75 €</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Augenbrauen & Wimpern -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="service-title" data-de="Augenbrauen & Wimpern" data-en="Eyebrows & Lashes">Augenbrauen &
+                        Wimpern</h3>
+                    <ul class="price-list">
+                        <li>
+                            <span class="service-name" data-de="Wimpern färben" data-en="Lash Tinting">Wimpern
+                                färben</span>
+                            <span class="service-price">15 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Augenbrauen färben" data-en="Brow Tinting">Augenbrauen
+                                färben</span>
+                            <span class="service-price">15 €</span>
+                        </li>
+                        <li>
+                            <span class="service-name" data-de="Augenbrauen zupfen" data-en="Brow Shaping">Augenbrauen
+                                zupfen</span>
+                            <span class="service-price">15 €</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title" data-de="Unsere Galerie" data-en="Our Gallery">Unsere Galerie</h2>
+                <p class="section-subtitle" data-de="Einblicke in unsere Arbeit und unseren Salon"
+                    data-en="Insights into our work and our salon">Einblicke in unsere Arbeit und unseren Salon</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item animate-on-scroll" data-src="images/3.jpg">
+                    <img src="images/3.jpg" alt="Irmonhair Gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-src="images/6.jpg">
+                    <img src="images/6.jpg" alt="Irmonhair Gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-src="images/7.jpg">
+                    <img src="images/7.jpg" alt="Irmonhair Gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-src="images/8.jpg">
+                    <img src="images/8.jpg" alt="Irmonhair Gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-src="images/9.jpg">
+                    <img src="images/9.jpg" alt="Irmonhair Gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-src="images/10.jpg">
+                    <img src="images/10.jpg" alt="Irmonhair Gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-src="images/11.jpg">
+                    <img src="images/11.jpg" alt="Irmonhair Gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-src="images/12.jpg">
+                    <img src="images/12.jpg" alt="Irmonhair Gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-src="images/13.jpg">
+                    <img src="images/13.jpg" alt="Irmonhair Gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-src="images/14.jpg">
+                    <img src="images/14.jpg" alt="Irmonhair Gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-src="images/15.jpg">
+                    <img src="images/15.jpg" alt="Irmonhair Gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-src="images/16.jpg">
+                    <img src="images/16.jpg" alt="Irmonhair Gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-src="images/17.jpg">
+                    <img src="images/17.jpg" alt="Irmonhair Gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-src="images/18.jpg">
+                    <img src="images/18.jpg" alt="Irmonhair Gallery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <button class="lightbox-prev" id="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next" id="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="Gallery Image" id="lightbox-img">
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title" data-de="Kontakt" data-en="Contact">Kontakt</h2>
+                <p class="section-subtitle" data-de="Besuchen Sie uns oder vereinbaren Sie einen Termin"
+                    data-en="Visit us or book an appointment">Besuchen Sie uns oder vereinbaren Sie einen Termin</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-de="Adresse" data-en="Address">Adresse</h4>
+                            <p>Planegger Str. 9<br>81241 München (Pasing)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-de="Telefon" data-en="Phone">Telefon</h4>
+                            <p><a href="tel:+498982075777">089 82075777</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-de="Öffnungszeiten" data-en="Opening Hours">Öffnungszeiten</h4>
+                            <p data-de="Mo - Fr: 9:00 - 18:00 Uhr<br>Sa: 9:00 - 14:00 Uhr"
+                                data-en="Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 9:00 AM - 2:00 PM">Mo - Fr: 9:00 - 18:00
+                                Uhr<br>Sa: 9:00 - 14:00 Uhr</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-train"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-de="Anfahrt" data-en="Directions">Anfahrt</h4>
+                            <p data-de="Bahnhof Pasing (wenige Gehminuten)" data-en="Pasing Station (few minutes walk)">
+                                Bahnhof Pasing (wenige Gehminuten)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map animate-on-scroll">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.124!2d11.4665!3d48.1097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf54c3db8b71%3A0x40d6e9e3b5c!2sHeiglhofstra%C3%9Fe%201%2C%2081377%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1702000000000"
+                        width="100%" height="400" style="border:0; border-radius: 16px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo.jpg" alt="Irmonhair Beauty" class="footer-logo">
+                    <p data-de="Ihr exklusiver Friseur in München Pasing für professionelle Haarpflege und Styling."
+                        data-en="Your exclusive hairdresser in Munich Pasing for professional hair care and styling.">
+                        Ihr exklusiver Friseur in München Pasing für professionelle Haarpflege und Styling.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-de="Schnelllinks" data-en="Quick Links">Schnelllinks</h4>
+                    <ul>
+                        <li><a href="#home" data-de="Startseite" data-en="Home">Startseite</a></li>
+                        <li><a href="#services" data-de="Preise" data-en="Prices">Preise</a></li>
+                        <li><a href="#gallery" data-de="Galerie" data-en="Gallery">Galerie</a></li>
+                        <li><a href="#contact" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <h4 data-de="Rechtliches" data-en="Legal">Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 data-de="Folgen Sie uns" data-en="Follow Us">Folgen Sie uns</h4>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/irmonhair" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/irmonhair" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://tiktok.com/@irmonhair" target="_blank" aria-label="TikTok"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/4989710938" target="_blank" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@irmonhair" target="_blank" aria-label="YouTube"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Irmonhair GmbH. <span data-de="Alle Rechte vorbehalten."
+                        data-en="All rights reserved.">Alle Rechte vorbehalten.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Impressum - Irmonhair Beauty GmbH, Ihr Friseur in München Hadern">
+    <title>Impressum | Irmonhair Beauty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .legal-page {
+            padding: 160px 0 100px;
+            min-height: 100vh;
+            background: var(--cream);
+        }
+
+        .legal-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .legal-content h1 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .legal-content h1::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: var(--rose-gold);
+            margin-top: 20px;
+        }
+
+        .legal-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--dark);
+            margin: 40px 0 20px;
+        }
+
+        .legal-content p {
+            color: var(--gray);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .legal-content a {
+            color: var(--primary-dark);
+        }
+
+        .legal-content a:hover {
+            color: var(--primary);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 40px;
+            color: var(--primary-dark);
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: var(--primary);
+            transform: translateX(-4px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="Irmonhair Beauty">
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#home" data-de="Startseite" data-en="Home">Startseite</a></li>
+                <li><a href="index.html#services" data-de="Preise" data-en="Prices">Preise</a></li>
+                <li><a href="index.html#gallery" data-de="Galerie" data-en="Gallery">Galerie</a></li>
+                <li><a href="index.html#contact" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="lang-toggle" id="lang-toggle">
+                    <span class="lang-active">DE</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-inactive">EN</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Legal Content -->
+    <section class="legal-page">
+        <div class="legal-content">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                <span data-de="Zurück zur Startseite" data-en="Back to Home">Zurück zur Startseite</span>
+            </a>
+
+            <h1 data-de="Impressum" data-en="Legal Notice">Impressum</h1>
+
+            <h2 data-de="Angaben gemäß § 5 TMG" data-en="Information according to § 5 TMG">Angaben gemäß § 5 TMG</h2>
+            <p>
+                Irmonhair GmbH<br>
+                Planegger Str. 9<br>
+                81241 München (Pasing)
+            </p>
+
+            <h2 data-de="Vertreten durch" data-en="Represented by">Vertreten durch</h2>
+            <p data-de="Geschäftsführer: [Name des Geschäftsführers]"
+                data-en="Managing Director: [Name of Managing Director]">
+                Geschäftsführer: [Name des Geschäftsführers]
+            </p>
+
+            <h2 data-de="Kontakt" data-en="Contact">Kontakt</h2>
+            <p>
+                <span data-de="Telefon" data-en="Phone">Telefon</span>: <a href="tel:+498982075777">089 82075777</a><br>
+                E-Mail: info@irmonhair.de
+            </p>
+
+            <h2 data-de="Registereintrag" data-en="Register Entry">Registereintrag</h2>
+            <p>
+                <span data-de="Eintragung im Handelsregister"
+                    data-en="Registration in the Commercial Register">Eintragung im Handelsregister</span><br>
+                <span data-de="Registergericht" data-en="Register Court">Registergericht</span>: Amtsgericht München<br>
+                <span data-de="Registernummer" data-en="Register Number">Registernummer</span>: HRB XXXXXX
+            </p>
+
+            <h2 data-de="Umsatzsteuer-ID" data-en="VAT ID">Umsatzsteuer-ID</h2>
+            <p data-de="Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE XXXXXXXXX"
+                data-en="VAT Identification Number according to § 27 a VAT Act: DE XXXXXXXXX">
+                Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE XXXXXXXXX
+            </p>
+
+            <h2 data-de="Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV"
+                data-en="Responsible for content according to § 55 Abs. 2 RStV">Verantwortlich für den Inhalt nach § 55
+                Abs. 2 RStV</h2>
+            <p>
+                [Name]<br>
+                Planegger Str. 9<br>
+                81241 München (Pasing)
+            </p>
+
+            <h2 data-de="Streitschlichtung" data-en="Dispute Resolution">Streitschlichtung</h2>
+            <p data-de="Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:"
+                data-en="The European Commission provides a platform for online dispute resolution (OS):">
+                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+            </p>
+            <p>
+                <a href="https://ec.europa.eu/consumers/odr/" target="_blank"
+                    rel="noopener">https://ec.europa.eu/consumers/odr/</a>
+            </p>
+            <p data-de="Unsere E-Mail-Adresse finden Sie oben im Impressum. Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+                data-en="You can find our email address above in the legal notice. We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.">
+                Unsere E-Mail-Adresse finden Sie oben im Impressum. Wir sind nicht bereit oder verpflichtet, an
+                Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
+
+            <h2 data-de="Haftung für Inhalte" data-en="Liability for Content">Haftung für Inhalte</h2>
+            <p data-de="Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen."
+                data-en="As a service provider, we are responsible for our own content on these pages in accordance with § 7 para.1 TMG under general laws. However, according to §§ 8 to 10 TMG, we are not obliged as a service provider to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.">
+                Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
+                allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht
+                verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu
+                forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+            </p>
+
+            <h2 data-de="Haftung für Links" data-en="Liability for Links">Haftung für Links</h2>
+            <p data-de="Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich."
+                data-en="Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the contents of the linked pages.">
+                Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben.
+                Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
+                verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+            </p>
+
+            <h2 data-de="Urheberrecht" data-en="Copyright">Urheberrecht</h2>
+            <p data-de="Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+                data-en="The content and works created by the site operators on these pages are subject to German copyright law. The reproduction, editing, distribution and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator.">
+                Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
+                Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
+                Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo.jpg" alt="Irmonhair Beauty" class="footer-logo">
+                    <p data-de="Ihr exklusiver Friseur in München Hadern für professionelle Haarpflege und Styling."
+                        data-en="Your exclusive hairdresser in Munich Hadern for professional hair care and styling.">
+                        Ihr exklusiver Friseur in München Hadern für professionelle Haarpflege und Styling.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-de="Schnelllinks" data-en="Quick Links">Schnelllinks</h4>
+                    <ul>
+                        <li><a href="index.html#home" data-de="Startseite" data-en="Home">Startseite</a></li>
+                        <li><a href="index.html#services" data-de="Preise" data-en="Prices">Preise</a></li>
+                        <li><a href="index.html#gallery" data-de="Galerie" data-en="Gallery">Galerie</a></li>
+                        <li><a href="index.html#contact" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <h4 data-de="Rechtliches" data-en="Legal">Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 data-de="Folgen Sie uns" data-en="Follow Us">Folgen Sie uns</h4>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/irmonhair" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/irmonhair" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://tiktok.com/@irmonhair" target="_blank" aria-label="TikTok"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/4989710938" target="_blank" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@irmonhair" target="_blank" aria-label="YouTube"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Irmonhair Beauty GmbH. <span data-de="Alle Rechte vorbehalten."
+                        data-en="All rights reserved.">Alle Rechte vorbehalten.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
